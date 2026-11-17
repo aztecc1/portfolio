@@ -346,11 +346,11 @@
 
 /* Hero: one vertical film that plays in place (replaces the three tilted posters). */
 .hero-art.hero-film{height:auto;display:flex;flex-direction:column;align-items:center;gap:16px}
-.hero-film-frame{position:relative;width:min(320px,100%);aspect-ratio:9/16;border:1px solid #424853;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 20px 45px #00000060}
+.hero-film-frame{position:relative;width:320px;max-width:100%;aspect-ratio:9/16;border:1px solid #424853;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 20px 45px #00000060}
 .hero-film-frame video{display:block;width:100%;height:100%;object-fit:cover;cursor:pointer}
 .hero-sound{position:absolute;right:12px;bottom:12px;padding:8px 14px;border:1px solid #ffffff55;border-radius:999px;background:#101114cc;color:#ffffff;font:inherit;font-size:12px;line-height:1.4;cursor:pointer}
 .hero-sound:hover{border-color:#91beff;color:#91beff}
-.hero-film-meta{width:min(320px,100%);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.hero-film-meta{width:320px;max-width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .hero-film-meta p{margin:0;min-width:0}
 .hero-film-meta strong{display:block;font-size:15px;line-height:1.5;color:#ffffff}
 .hero-film-meta span{display:block;font-size:12px;line-height:1.6;color:#b9c0cc}
