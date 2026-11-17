@@ -418,3 +418,6 @@
 /* Full-width divider after the results section, like the one after About. */
 .combined-impact{border-bottom:1px solid #343740}
 .combined-impact .evidence-open{border-bottom:0}
+
+/* Full-width divider after the work section. */
+.section-divided{border-bottom:1px solid #343740}
