@@ -243,10 +243,39 @@
 }
 
 /* Alternate full-width white and light-gray section backgrounds. */
+.about-bio{margin:24px 0 0;font-size:17px;line-height:2;letter-spacing:-.2px;color:#333333;word-break:keep-all;overflow-wrap:break-word}
+@media screen and (max-width:760px){.about-bio{margin-top:20px;font-size:16px;line-height:1.95}}
+@media print{.about-bio{font-size:10pt;line-height:1.8;color:#333333}}
 @media screen{
  .section-band-muted{background:#f2f2f2}
  .about-section{background:#fafafa}
  #work,#process{background:#fafafa}
  .impact-section{background:#f2f2f2}
  .section-band-muted .additional-section{border-bottom:0}
+}
+
+/* One introduction card, with a quiet profile panel and continuous biography. */
+@media screen{
+ .about-card{grid-template-columns:260px minmax(0,1fr);gap:0;align-items:stretch;background:#ffffff;border:1px solid #dedede;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px #00000005}
+ .about-card .about-profile{padding:32px;background:#f3f3f3;border-right:1px solid #e3e3e3;gap:24px}
+ .about-card .about-portrait{width:180px;height:225px;border-radius:12px}
+ .about-card .about-content{padding:36px 40px}
+ .about-card .about-content h1{margin:0;font-size:32px;line-height:1.45;letter-spacing:-1px}
+ .about-card .about-bio{margin-top:24px;padding-top:24px;border-top:1px solid #e7e7e7;font-size:16px;line-height:1.95}
+ .about-card .about-series-link{font-size:12px}
+}
+@media screen and (max-width:1100px){
+ .about-card{grid-template-columns:230px minmax(0,1fr)}
+ .about-card .about-profile{padding:24px}
+ .about-card .about-content{padding:28px}
+ .about-card .about-content h1{font-size:29px}
+}
+@media screen and (max-width:760px){
+ .about-card{grid-template-columns:1fr;border-radius:16px}
+ .about-card .about-profile{flex-wrap:wrap;border-right:0;border-bottom:1px solid #e3e3e3;gap:22px}
+ .about-card .about-portrait{width:140px;height:175px}
+ .about-card .about-identity{flex:1 1 150px}
+ .about-card .about-content{padding:26px 24px}
+ .about-card .about-content h1{font-size:27px}
+ .about-card .about-bio{margin-top:20px;padding-top:20px}
 }
