@@ -400,3 +400,12 @@
 .about-insta-link:hover strong{color:#ffffff}
 .about-insta-link:hover b{transform:translate(2px,-2px)}
 @media screen and (max-width:760px){.about-insta-link{flex-basis:100%;margin:6px 0 0}}
+
+/* Emphasise the call to action; the handle is secondary. */
+.about-insta-link{gap:12px;margin-left:12px}
+.about-insta-link svg{width:28px;height:28px}
+.about-insta-link .insta-text{display:flex;flex-direction:column;gap:2px;color:inherit}
+.about-insta-link .insta-text strong{font-size:19px;font-weight:700;color:#91beff;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.about-insta-link .insta-text b{display:inline-block;font-weight:700;text-decoration:none}
+.about-insta-link .insta-text small{font-size:13px;color:#b9c0cc}
+.about-insta-link:hover .insta-text strong{color:#ffffff}
