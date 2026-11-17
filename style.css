@@ -379,3 +379,4 @@
 
 /* Channel copy starts at the top of the section, not halfway down the film. */
 .combined-impact .hero{align-items:start}
+.hero-desc.channel-intro+.hero-desc.channel-intro{margin-top:14px}
