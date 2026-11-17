@@ -421,3 +421,16 @@
 
 /* Full-width divider after the work section. */
 .section-divided{border-bottom:1px solid #343740}
+
+/* Bar chart fills its panel: larger labels, thicker bars, rows spread evenly. */
+@media screen{
+.combined-impact .chart-panel{display:flex;flex-direction:column}
+.combined-impact .chart-panel .panel-head{margin-bottom:8px}
+.combined-impact .chart-panel .panel-head h3{font-size:18px}
+.combined-impact .chart-panel .bar-row{flex:1;grid-template-columns:120px minmax(0,1fr) 64px;gap:14px;margin:0;font-size:15px}
+.combined-impact .chart-panel .bar-row>b{font-size:16px;font-weight:600}
+.combined-impact .chart-panel .track{height:16px;border-radius:3px}
+.combined-impact .chart-panel .track i{border-radius:3px}
+.combined-impact .evidence-open{padding-top:28px}
+}
+@media screen and (max-width:760px){.combined-impact .chart-panel .bar-row{flex:none;margin:18px 0;grid-template-columns:96px minmax(0,1fr) 54px;font-size:13px}.combined-impact .chart-panel .bar-row>b{font-size:14px}}
