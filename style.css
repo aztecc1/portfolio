@@ -368,3 +368,7 @@
 /* Ad copy starts at the top of the film instead of floating at its middle. */
 .additional-layout{align-items:start}
 .hero-desc.channel-intro{margin-top:14px}
+
+/* Growth figures sit under the biography. */
+.about-highlights{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.about-highlights .growth-highlight{margin:0}
