@@ -22,3 +22,12 @@ function closeModal(){dialog.close();}document.querySelector('.modal-close').add
 
 
 document.addEventListener('play',event=>{if(event.target instanceof HTMLVideoElement){document.querySelectorAll('video').forEach(video=>{if(video!==event.target)video.pause();});}},true);
+
+// Hero film: plays muted while on screen; sound and language are the viewer's choice.
+(()=>{const v=document.querySelector('#hero-video');if(!v)return;const sound=document.querySelector('.hero-sound');
+const setSound=on=>{v.muted=!on;sound.textContent=on?'소리 끄기':'소리 켜기';sound.setAttribute('aria-pressed',String(on));};
+sound.addEventListener('click',()=>{setSound(v.muted);if(v.paused)v.play().catch(()=>{});});
+v.addEventListener('click',()=>{if(v.paused)v.play().catch(()=>{});else v.pause();});
+let visible=false;new IntersectionObserver(e=>{visible=e[0].isIntersecting;if(visible&&!dialog.open)v.play().catch(()=>{});else v.pause();},{threshold:.5}).observe(v);
+dialog.addEventListener('close',()=>{if(visible)v.play().catch(()=>{});});
+document.querySelectorAll('[data-hero-lang]').forEach(b=>b.addEventListener('click',()=>{const l=b.dataset.heroLang;document.querySelectorAll('[data-hero-lang]').forEach(x=>{const on=x===b;x.classList.toggle('active',on);x.setAttribute('aria-pressed',String(on));});v.src=`assets/hansel-${l}.mp4`;v.setAttribute('aria-label',`헨젤과 그레텔 ${l==='ko'?'한국어':'일본어'} 영상`);v.play().catch(()=>{});}));})();
