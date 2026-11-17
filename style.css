@@ -178,90 +178,81 @@
  .metrics strong{white-space:nowrap;font-size:34px}
 }
 
-/* Light monochrome theme. Media assets retain their original colors. */
+/* Site-wide dark theme with white copy and restrained blue accents. */
 @media screen {
-  body{background:#fafafa;color:#171717}
-  .header nav{color:#333333}
-  .header nav a:hover,.text-link:hover,.instagram-profile-link:hover{color:#000000;text-decoration:underline;text-underline-offset:4px}
+  :root{--bg:#101114;--panel:#191b20;--line:#343740;--muted:#c1c7d0;--text:#f7f8fa;--lime:#91beff;color-scheme:dark}
+  body{background:var(--bg);color:var(--text)}
+  .header nav,.text-link,.instagram-profile-link{color:#f7f8fa}
+  .header nav a:hover,.text-link:hover,.instagram-profile-link:hover{color:#91beff;text-decoration:underline;text-underline-offset:4px}
   .hero-desc,.about-intro,.about-intro-block .about-intro,
   .automation-card .automation-description,.core-steps p,
   .compact-toolkit .toolkit-grid article>p,.additional-copy>p,
   .additional-copy dd,.chart-takeaway,.audience-panel>p,
-  .channel-note p,.evidence p{color:#333333}
-  .hero-desc strong,.hero em,.chart-takeaway strong,.lime,
-  .automation-number,.automation-foot>span,.step-index,
-  .channel-note>span,.additional-copy dt,.project-badge,
-  .evidence summary>span{color:#171717}
+  .channel-note p,.evidence p,.about-bio{color:#e1e5eb}
+  .hero-desc strong,.hero em,.chart-takeaway strong,.toolkit-brands b{color:#ffffff}
+  .lime,.automation-number,.automation-foot>span,.step-index,
+  .channel-note>span,.additional-copy dt,.project-badge,.evidence summary>span{color:#91beff}
   .hero-bottom,.art-caption,.work-foot p,.work-foot p span,
   .step-foot,.data-date,.data-date small,.metric-label,.metrics p,
-  .metrics strong>span,.panel-head>span,.portfolio-footer footer,
-  .modal-copy .eyebrow,.modal-copy dt,.discipline-strip .wrap{color:#555555}
-  .fine,.audience-panel .fine{color:#555555!important}
-  .primary,.language-control button.active{background:#171717;border-color:#171717;color:#ffffff}
-  .primary:hover{background:#333333;border-color:#333333}
-  .secondary{background:#ffffff;border-color:#b5b5b5;color:#171717}
-  .secondary:hover{background:#f0f0f0;border-color:#777777}
-  .skip{background:#171717;color:#ffffff}
-  .arrow-circle{background:#ffffff;border-color:#cccccc;color:#171717}
-  .work-card:hover .arrow-circle{background:#171717;color:#ffffff}
-
-  .about-section{background:#fafafa;color:#171717}
-  .about-intro-block{border-left-color:#b5b5b5}
-  .about-experience.automation-card,.toolkit-grid article{background:#ffffff;border-color:#dddddd;box-shadow:0 2px 8px #00000004}
-  .automation-icon{background:#f2f2f2;color:#171717;border-color:#d5d5d5}
-  .toolkit-brands b{background:#f0f0f0;color:#171717}
-  .core-steps article{border-top-color:#b5b5b5}
-  .impact-section{background:#f2f2f2;border-color:#dddddd}
-  .chart-panel{background:#ffffff;border-color:#dddddd}
-  .audience-panel{background:#ffffff;color:#171717;border:1px solid #dddddd}
-  .audience-panel .eyebrow{color:#555555}
-  .target{border-color:#dddddd}
-  .metrics>div{border-color:#cccccc}
-  .metrics>div:first-child{border-bottom-color:#cccccc}
-  .track{background:#e5e5e5}
-  .track i{background:#777777}
-  .bar-row:nth-child(2) .track i{background:#171717}
-
-  .art-grid{background:radial-gradient(ellipse at center,#d5d5d580,transparent 69%)}
-  .art-grid:before{border-color:#d6d6d680}
-  .art-grid:after{border-color:#d6d6d660}
-  .film-poster{border-color:#d5d5d5;box-shadow:0 20px 45px #00000024}
-  .floating-label{background:#ffffff;border-color:#d5d5d5;color:#333333}
-  .poster-foot{background:#171717;color:#ffffff}
+  .panel-head>span,.portfolio-footer footer,.modal-copy .eyebrow,
+  .modal-copy dt,.discipline-strip .wrap{color:#c1c7d0}
+  .fine,.audience-panel .fine{color:#b8c0cc!important}
+  .primary,.language-control button.active{background:#91beff;border-color:#91beff;color:#101114}
+  .primary:hover{background:#b3d3ff;border-color:#b3d3ff}
+  .secondary{background:#191b20;border-color:#707985;color:#ffffff}
+  .secondary:hover{background:#292d35;border-color:#91beff}
+  .skip{background:#91beff;color:#101114}
+  .arrow-circle{background:#191b20;border-color:#505763;color:#ffffff}
+  .work-card:hover .arrow-circle{background:#91beff;color:#101114}
+  .about-section{background:var(--bg);color:var(--text)}
+  .about-intro-block{border-left-color:#707985}
+  .about-experience.automation-card,.toolkit-grid article{background:#191b20;border-color:#343740;box-shadow:none}
+  .automation-icon,.toolkit-brands b{background:#292d35;border-color:#505763}
+  .automation-icon{color:#91beff}
+  .core-steps article{border-top-color:#505763}
+  .impact-section{background:#101114;border-color:#343740}
+  .chart-panel,.audience-panel{background:#191b20;color:#f7f8fa;border-color:#343740}
+  .audience-panel .eyebrow{color:#c1c7d0}
+  .target,.metrics>div,.metrics>div:first-child{border-color:#343740}
+  .track{background:#30343d}
+  .track i{background:#7398cc}
+  .bar-row:nth-child(2) .track i{background:#91beff}
+  .art-grid{background:radial-gradient(ellipse at center,#91beff18,transparent 69%)}
+  .art-grid:before,.art-grid:after{border-color:#91beff20}
+  .film-poster{border-color:#424853;box-shadow:0 20px 45px #00000060}
+  .floating-label{background:#191b20;border-color:#424853;color:#e1e6ed}
+  .poster-foot{background:#17191e;color:#ffffff}
   .poster-foot b{color:#ffffff}
-  .round-play{background:#171717;color:#ffffff;box-shadow:0 0 0 9px #ffffff44}
-  .work-visual{background:#eeeeee}
+  .round-play{background:#91beff;color:#101114;box-shadow:0 0 0 9px #91beff22}
+  .work-visual,.additional-media,.modal-media{background:#0b0c0e;border-color:#343740}
   .work-type,.work-play,.work-number{color:#ffffff}
-  .additional-media{background:#111111;border-color:#d5d5d5}
-
-  dialog{background:#ffffff;color:#171717;border-color:#cccccc;box-shadow:0 30px 100px #00000040}
-  dialog::backdrop{background:#000000b3}
-  .modal-close{background:#ffffff;color:#171717;border:1px solid #cccccc}
-  .modal-media{background:#111111}
-  .modal-copy>p:not(.eyebrow):not(.fine),.modal-copy dd{color:#333333}
+  dialog{background:#191b20;color:#f7f8fa;border-color:#505763;box-shadow:0 30px 100px #00000060}
+  dialog::backdrop{background:#000000cc}
+  .modal-close{background:#292d35;color:#ffffff;border:1px solid #505763}
+  .modal-copy>p:not(.eyebrow):not(.fine),.modal-copy dd{color:#e1e5eb}
   .modal-media .media-error{color:#ffffff}
 }
 
-/* Alternate full-width white and light-gray section backgrounds. */
+/* Dark section backgrounds; print keeps its separate light presentation. */
 .about-bio{margin:24px 0 0;font-size:17px;line-height:2;letter-spacing:-.2px;color:#333333;word-break:keep-all;overflow-wrap:break-word}
 @media screen and (max-width:760px){.about-bio{margin-top:20px;font-size:16px;line-height:1.95}}
 @media print{.about-bio{font-size:10pt;line-height:1.8;color:#333333}}
 @media screen{
- .section-band-muted{background:#f2f2f2}
- .about-section{background:#fafafa}
- #work,#process{background:#fafafa}
- .impact-section{background:#f2f2f2}
+ .section-band-muted{background:#14161a}
+ .about-section{background:#101114}
+ #work,#process{background:#101114}
+ .impact-section{background:#101114}
  .section-band-muted .additional-section{border-bottom:0}
 }
 
 /* One introduction card, with a quiet profile panel and continuous biography. */
 @media screen{
- .about-card{grid-template-columns:260px minmax(0,1fr);gap:0;align-items:stretch;background:#ffffff;border:1px solid #dedede;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px #00000005}
- .about-card .about-profile{padding:32px;background:#f3f3f3;border-right:1px solid #e3e3e3;gap:24px}
+ .about-card{grid-template-columns:260px minmax(0,1fr);gap:0;align-items:stretch;background:#191b20;border:1px solid #343740;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px #00000020}
+ .about-card .about-profile{padding:32px;background:#14161a;border-right:1px solid #343740;gap:24px}
  .about-card .about-portrait{width:180px;height:225px;border-radius:12px}
  .about-card .about-content{padding:36px 40px}
  .about-card .about-content h1{margin:0;font-size:32px;line-height:1.45;letter-spacing:-1px}
- .about-card .about-bio{margin-top:24px;padding-top:24px;border-top:1px solid #e7e7e7;font-size:16px;line-height:1.95}
+ .about-card .about-bio{margin-top:24px;padding-top:24px;border-top:1px solid #343740;color:#e1e5eb;font-size:16px;line-height:1.95}
  .about-card .about-series-link{font-size:12px}
 }
 @media screen and (max-width:1100px){
@@ -272,10 +263,78 @@
 }
 @media screen and (max-width:760px){
  .about-card{grid-template-columns:1fr;border-radius:16px}
- .about-card .about-profile{flex-wrap:wrap;border-right:0;border-bottom:1px solid #e3e3e3;gap:22px}
+ .about-card .about-profile{flex-wrap:wrap;border-right:0;border-bottom:1px solid #343740;gap:22px}
  .about-card .about-portrait{width:140px;height:175px}
  .about-card .about-identity{flex:1 1 150px}
  .about-card .about-content{padding:26px 24px}
  .about-card .about-content h1{font-size:27px}
  .about-card .about-bio{margin-top:20px;padding-top:20px}
 }
+
+/* Introduction and audience evidence share one dark section. */
+.combined-impact .hero{min-height:0;padding-top:64px;padding-bottom:36px}
+.combined-impact .hero h2{font-size:clamp(34px,3.5vw,49px);line-height:1.3}
+.growth-highlight{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:24px 0 0;padding:12px 16px;border-radius:10px;width:fit-content;font-size:13px}
+.growth-highlight strong{font-size:21px;letter-spacing:-.5px}
+.combined-impact .hero-actions{margin-top:24px}
+.impact-body{padding-bottom:72px}
+.impact-context{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:28px;border-top:1px solid}
+.impact-context>p:first-child{font-size:18px;line-height:1.6}
+.impact-date{font-size:12px;line-height:1.8;text-align:right}
+.combined-impact .metrics{gap:18px;margin:28px 0}
+.combined-impact .metrics>div{padding:26px;border:1px solid;border-radius:14px}
+.combined-impact .metrics strong{font-size:clamp(38px,4.8vw,64px);white-space:nowrap;letter-spacing:-2px}
+.combined-impact .metrics strong>span{font-size:16px;letter-spacing:0}
+@media screen{
+ .combined-impact{background:#101114;color:#f7f8fa;--text:#f7f8fa;--muted:#bcc1cc;--line:#343740;--panel:#191b20;--lime:#91beff;border-color:#343740}
+ .combined-impact .hero h2,.combined-impact .hero-desc strong,.combined-impact h3,.combined-impact .impact-context strong,.combined-impact .chart-takeaway strong,.combined-impact .audience-panel{color:#ffffff}
+ .combined-impact .hero h2 em{color:#f7f8fa}
+ .combined-impact .hero-desc,.combined-impact .chart-takeaway,.combined-impact .audience-panel>p{color:#cbd0d9}
+ .combined-impact .eyebrow,.combined-impact .metric-label,.combined-impact .metrics p,.combined-impact .panel-head>span,.combined-impact .impact-date,.combined-impact .art-caption{color:#b9c0cc}
+ .combined-impact .growth-highlight{background:#91beff14;border:1px solid #91beff40;color:#cbd0d9}
+ .combined-impact .growth-highlight strong,.combined-impact .metrics strong,.combined-impact .metrics strong>span,.combined-impact .target strong,.combined-impact .bar-row>b,.combined-impact .evidence summary>span{color:#91beff}
+ .combined-impact .impact-context{border-color:#343740}
+ .combined-impact .metrics>div,.combined-impact .chart-panel,.combined-impact .audience-panel{background:#191b20;border-color:#343740}
+ .combined-impact .metrics>div:first-child{background:#1a2639;border-color:#44648e}
+ .combined-impact .primary{background:#91beff;color:#101114;border-color:#91beff}
+ .combined-impact .primary:hover{background:#b3d3ff;border-color:#b3d3ff}
+ .combined-impact .text-link{color:#f7f8fa}
+ .combined-impact .track{background:#30343d}
+ .combined-impact .track i{background:#7398cc}
+ .combined-impact .bar-row:nth-child(2) .track i{background:#91beff}
+ .combined-impact .target{border-color:#343740}
+ .combined-impact .fine{color:#aeb7c5!important}
+ .combined-impact .proof-grid figcaption{color:#aeb7c5}
+ .combined-impact .evidence{border-color:#343740}
+ .combined-impact .evidence summary{color:#f7f8fa}
+ .combined-impact .evidence summary:hover{color:#91beff}
+ .combined-impact .floating-label{background:#191b20;color:#e1e6ed;border-color:#424853}
+ .combined-impact .art-grid{background:radial-gradient(ellipse at center,#91beff18,transparent 69%)}
+ .combined-impact .art-grid:before,.combined-impact .art-grid:after{border-color:#91beff20}
+ .combined-impact .film-poster{border-color:#424853;box-shadow:0 20px 45px #00000060}
+ .combined-impact .round-play{background:#91beff;color:#101114;box-shadow:0 0 0 9px #91beff22}
+}
+@media screen and (max-width:760px){
+ .combined-impact .hero{padding-top:44px;padding-bottom:24px}
+ .combined-impact .hero h2{font-size:38px}
+ .impact-body{padding-bottom:48px}
+ .impact-context{flex-direction:column;align-items:flex-start;gap:10px;padding-top:24px}
+ .impact-date{text-align:left}
+ .combined-impact .metrics{grid-template-columns:1fr;gap:12px}
+ .combined-impact .metrics>div{padding:22px;grid-column:auto}
+ .combined-impact .metrics strong{font-size:48px}
+ .combined-impact .metric-label,.combined-impact .metrics p{font-size:12px}
+ .growth-highlight{gap:4px 12px}
+ .growth-highlight strong{font-size:20px}
+}
+
+/* Metric headings remain prominent at every screen size. */
+@media screen{
+ .combined-impact .metric-label{font-size:20px;font-weight:700;line-height:1.5;letter-spacing:-.4px;color:#ffffff}
+ .combined-impact .metrics p{font-size:14px;line-height:1.7;color:#c1c7d0}
+}
+@media screen and (min-width:761px) and (max-width:1100px){
+ .combined-impact .metric-label{font-size:18px}
+}
+
+.combined-impact .metrics strong>.metric-approx{margin-left:0;margin-right:8px;font-size:20px;vertical-align:middle}
