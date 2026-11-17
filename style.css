@@ -338,3 +338,7 @@
 }
 
 .combined-impact .metrics strong>.metric-approx{margin-left:0;margin-right:8px;font-size:20px;vertical-align:middle}
+
+/* Evidence block that is always open (no toggle). */
+.evidence-open{padding-bottom:28px}
+.evidence .evidence-title{margin:0;padding:20px 0;font-size:14px;color:#f7f8fa}
