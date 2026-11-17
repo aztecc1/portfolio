@@ -376,3 +376,6 @@
 
 .additional-copy h3:first-child{margin-top:0}
 .hero-desc.channel-intro{margin-top:0}
+
+/* Channel copy starts at the top of the section, not halfway down the film. */
+.combined-impact .hero{align-items:start}
