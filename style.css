@@ -418,3 +418,6 @@
 /* Full-width divider after the results section, like the one after About. */
 .combined-impact{border-bottom:1px solid #343740}
 .combined-impact .evidence-open{border-bottom:0}
+
+/* Fit the Instagram link within the photo width (180px). */
+@media screen and (min-width:761px){.about-identity .about-insta-link{gap:8px;max-width:180px}.about-identity .about-insta-link svg{width:22px;height:22px}.about-identity .about-insta-link .insta-text strong{font-size:14px;text-underline-offset:4px}.about-identity .about-insta-link .insta-text small{font-size:12px}}
