@@ -342,3 +342,4 @@
 /* Evidence block that is always open (no toggle). */
 .evidence-open{padding-bottom:28px}
 .evidence .evidence-title{margin:0;padding:20px 0;font-size:14px;color:#f7f8fa}
+@media screen{.about-section .about-bio{color:#e1e5eb}}
