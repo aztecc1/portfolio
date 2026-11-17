@@ -356,3 +356,11 @@
 .hero-film-meta span{display:block;font-size:12px;line-height:1.6;color:#b9c0cc}
 .hero-film-meta .hero-lang{flex:none;margin:0}
 @media screen and (max-width:760px){.hero-art.hero-film{width:100%;margin:24px auto 0}}
+
+/* Work cards play in place, at the films' own 9:16 ratio. */
+.work-grid.work-grid-film{max-width:960px;margin-inline:auto}
+.work-card-film .work-visual{height:auto;aspect-ratio:9/16;border-radius:12px}
+.work-card-film .work-visual:after{display:none}
+.work-card-film .work-visual video{display:block;width:100%;height:100%;object-fit:cover;background:#000}
+.work-more{display:flex;justify-content:center;margin-top:36px}
+@media screen and (max-width:760px){.work-grid.work-grid-film{max-width:320px}.work-card-film .work-info{padding-top:16px}}
