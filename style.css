@@ -409,3 +409,8 @@
 .about-insta-link .insta-text b{display:inline-block;font-weight:700;text-decoration:none}
 .about-insta-link .insta-text small{font-size:13px;color:#b9c0cc}
 .about-insta-link:hover .insta-text strong{color:#ffffff}
+
+/* Instagram link lives under the photo again, still as the emphasised link. */
+.about-identity .about-insta-link{display:flex;margin:20px 0 0;align-self:auto}
+.about-identity .about-insta-link .insta-text strong{font-size:17px;white-space:nowrap}
+@media screen and (max-width:760px){.about-identity .about-insta-link{margin-top:16px}.about-identity .about-insta-link svg{width:24px;height:24px}.about-identity .about-insta-link .insta-text strong{font-size:16px}}
