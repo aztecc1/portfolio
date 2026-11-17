@@ -371,4 +371,5 @@
 
 /* Growth figures sit under the biography. */
 .about-highlights{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
-.about-highlights .growth-highlight{margin:0}
+.about-highlights .growth-highlight{margin:0;flex-direction:column;align-items:flex-start;gap:2px;background:#91beff14;border:1px solid #91beff40;color:#cbd0d9}
+.about-highlights .growth-highlight strong{color:#91beff}
