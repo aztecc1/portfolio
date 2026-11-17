@@ -382,4 +382,4 @@
 .hero-desc.channel-intro+.hero-desc.channel-intro{margin-top:14px}
 
 /* Ad film and copy sit as a centred pair instead of hugging the left edge. */
-@media screen and (min-width:761px){.additional-layout{max-width:960px;grid-template-columns:320px minmax(0,1fr);gap:56px}}
+@media screen and (min-width:761px){.additional-layout{max-width:960px;margin-left:72px;margin-right:auto;grid-template-columns:320px minmax(0,1fr);gap:56px}}
