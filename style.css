@@ -390,3 +390,13 @@
 .about-highlights .about-insta span{display:flex;align-items:center;gap:6px}
 .about-highlights .about-insta svg{width:14px;height:14px;flex:none}
 @media screen and (max-width:760px){.about-highlights .about-insta{flex-basis:100%}}
+
+/* Instagram: an obvious text link (no box), so it never reads as a third figure. */
+.about-insta-link{align-self:center;display:inline-flex;align-items:center;gap:8px;margin-left:8px;color:#91beff;font-size:14px;line-height:1.5;text-decoration:none}
+.about-insta-link svg{width:18px;height:18px;flex:none}
+.about-insta-link span{color:#cbd0d9}
+.about-insta-link strong{font-size:16px;font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.about-insta-link b{font-weight:400;transition:transform .2s}
+.about-insta-link:hover strong{color:#ffffff}
+.about-insta-link:hover b{transform:translate(2px,-2px)}
+@media screen and (max-width:760px){.about-insta-link{flex-basis:100%;margin:6px 0 0}}
