@@ -414,3 +414,7 @@
 .about-identity .about-insta-link{display:flex;margin:20px 0 0;align-self:auto}
 .about-identity .about-insta-link .insta-text strong{font-size:17px;white-space:nowrap}
 @media screen and (max-width:760px){.about-identity .about-insta-link{margin-top:16px}.about-identity .about-insta-link svg{width:24px;height:24px}.about-identity .about-insta-link .insta-text strong{font-size:16px}}
+
+/* Full-width divider after the results section, like the one after About. */
+.combined-impact{border-bottom:1px solid #343740}
+.combined-impact .evidence-open{border-bottom:0}
