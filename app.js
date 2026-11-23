@@ -1,16 +1,16 @@
 'use strict';
 const projects={
- hansel:{title:'헨젤과 그레텔',type:'STORYTELLING / JAPANESE & KOREAN',views:'467,765회',duration:'85.1초 JP / 73.0초 KR',description:'익숙한 동화에 대한 기억과 원작의 차이로 호기심을 만들고, 마지막 질문까지 이어지는 구조로 제작한 숏폼입니다.',intent:'“숲에 버린 사람이 친엄마였다”는 반전으로 시작해, 결말의 질문으로 시청자 해석과 댓글을 유도했습니다.',craft:'GPT를 활용한 대본 구성, 장면별 AI 이미지, 해설·엄마·마녀의 TTS, 구절별 자막과 장면 전환을 연결했습니다.',files:{ja:'hansel-ja.mp4',ko:'hansel-ko.mp4'}},
- rapunzel:{title:'라푼젤',type:'LOCALIZATION / JAPANESE & KOREAN',views:'218,754회',duration:'84.6초 JP / 76.5초 KR',description:'“라푼젤은 공주가 아니었다”는 도입으로 익숙한 인물의 배경을 다시 소개합니다. 같은 소재를 두 언어에 맞게 편집했습니다.',intent:'등장인물의 태생을 새롭게 보여주고, 사건의 흐름을 짧은 내레이션으로 전달했습니다.',craft:'일본어 문장 길이에 맞춰 장면을 추가 분할하고, 번역 피드백·음성·자막을 조정했습니다. 채택본 기준 한국어 76.5초, 일본어 84.6초입니다.',files:{ja:'rapunzel-ja.mp4',ko:'rapunzel-ko.mp4'}},
+ hansel:{title:'헨젤과 그레텔',type:'STORYTELLING / JAPANESE & KOREAN',views:'54.4만 회',duration:'85.1초 JP / 73.0초 KR',description:'익숙한 동화에 대한 기억과 원작의 차이로 호기심을 만들고, 마지막 질문까지 이어지는 구조로 제작한 숏폼입니다.',intent:'“숲에 버린 사람이 친엄마였다”는 반전으로 시작해, 결말의 질문으로 시청자 해석과 댓글을 유도했습니다.',craft:'GPT를 활용한 대본 구성, 장면별 AI 이미지, 해설·엄마·마녀의 TTS, 구절별 자막과 장면 전환을 연결했습니다.',files:{ja:'hansel-ja.mp4',ko:'hansel-ko.mp4'}},
+ rapunzel:{title:'라푼젤',type:'LOCALIZATION / JAPANESE & KOREAN',views:'25.5만 회',duration:'84.6초 JP / 76.5초 KR',description:'“라푼젤은 공주가 아니었다”는 도입으로 익숙한 인물의 배경을 다시 소개합니다. 같은 소재를 두 언어에 맞게 편집했습니다.',intent:'등장인물의 태생을 새롭게 보여주고, 사건의 흐름을 짧은 내레이션으로 전달했습니다.',craft:'일본어 문장 길이에 맞춰 장면을 추가 분할하고, 번역 피드백·음성·자막을 조정했습니다. 채택본 기준 한국어 76.5초, 일본어 84.6초입니다.',files:{ja:'rapunzel-ja.mp4',ko:'rapunzel-ko.mp4'}},
  museaura:{title:'MuseAura 하트팩',type:'PRODUCT FILM / AD CONCEPT',views:'광고 초안',duration:'30.7초 · 1080 × 1920 원본',description:'화장품 사업을 운영하는 지인에게 제공한 제품 광고 영상 초안입니다. 제품에 들어가는 성분을 캐릭터로 표현하고, 하나의 하트팩이 되는 과정을 이야기로 만들었습니다.',intent:'성분 소개를 친근한 캐릭터의 움직임과 결합 과정으로 전달합니다. 핑크빛 공간과 하트 모티프로 시각적인 일관성을 만들었습니다.',craft:'장면별 기준 이미지와 시작·끝 프레임을 활용한 영상 생성, 클립 재구성, 크로스페이드와 효과음 편집. 마지막 제품 장면은 실물 이미지의 확대 연출로 구성했습니다.',files:{film:'museaura.mp4'}},
- beauty:{title:'미녀와 야수',type:'STORYTELLING / VOICE DIRECTION',views:'162,305회',duration:'97.7초 JP / 85.3초 KR',description:'등장인물별 목소리와 이야기의 감정선을 조합한 AI 스토리텔링 숏폼입니다.',intent:'야수의 외형과 감정의 차이를 목소리·표정·장면으로 전달했습니다.',craft:'배역별 TTS와 연기 지시, 야수 목소리의 음높이 조정, 대본 압축 및 일본어 자막 시작 시점을 수정했습니다.',files:{ja:'beauty-ja.mp4'}},
- snowwhite:{title:'백설공주',views:'10.7만',duration:'69.0초 JP / 68.9초 KR',craft:'첫 컷을 이미지 기반 영상으로 제작하고, 왕비·거울의 목소리와 거울의 울림 효과를 구성했습니다.'},
- cinderella:{title:'신데렐라',views:'9.9만',duration:'67.9초 JP / 59.1초 KR Instagram',craft:'한국어·일본어 채택본과 한국어 YouTube판을 별도 관리했습니다. 인물별 목소리와 강조 자막을 구성했습니다.'},
- mermaid:{title:'인어공주',views:'7.9만',duration:'88.9초 JP / 76.1초 KR',craft:'내레이션과 장면별 이미지를 구성하고, 한국어·일본어 버전으로 음성과 자막을 편집했습니다.'},
- sleeping1:{title:'잠자는 숲속의 공주 ①',views:'4.5만',duration:'102.1초 JP / 96.9초 KR',craft:'분량을 조정하며 대본 단축, 그림 재배치, 자막과 음량 보정을 반복했습니다.'},
- sleeping2:{title:'잠자는 숲속의 공주 ②',views:'3.5만',duration:'104.7초 JP / 98.5초 KR',craft:'장면별 효과음을 추가하고, 언어별 음성 길이에 맞춰 울음·문·말발굽 소리의 위치를 조절했습니다.'},
- peterpan:{title:'피터팬',views:'2.4만',duration:'95.1초 JP / 82.0초 KR',craft:'해설·피터·웬디의 목소리를 구분하고, 외침의 음량과 울림 및 장면 배열을 조정했습니다.'},
- pinocchio:{title:'피노키오',views:'2.1만',duration:'98.7초 JP / 92.4초 KR',craft:'일본어 음성 끊김을 재녹음하고, 자막 시각과 장면별 음악·효과음의 무음 위치를 조정했습니다.'},
+ beauty:{title:'미녀와 야수',type:'STORYTELLING / VOICE DIRECTION',views:'19.4만 회',duration:'97.7초 JP / 85.3초 KR',description:'등장인물별 목소리와 이야기의 감정선을 조합한 AI 스토리텔링 숏폼입니다.',intent:'야수의 외형과 감정의 차이를 목소리·표정·장면으로 전달했습니다.',craft:'배역별 TTS와 연기 지시, 야수 목소리의 음높이 조정, 대본 압축 및 일본어 자막 시작 시점을 수정했습니다.',files:{ja:'beauty-ja.mp4'}},
+ snowwhite:{title:'백설공주',views:'11.8만',duration:'69.0초 JP / 68.9초 KR',craft:'첫 컷을 이미지 기반 영상으로 제작하고, 왕비·거울의 목소리와 거울의 울림 효과를 구성했습니다.'},
+ cinderella:{title:'신데렐라',views:'10.7만',duration:'67.9초 JP / 59.1초 KR Instagram',craft:'한국어·일본어 채택본과 한국어 YouTube판을 별도 관리했습니다. 인물별 목소리와 강조 자막을 구성했습니다.'},
+ mermaid:{title:'인어공주',views:'9.1만',duration:'88.9초 JP / 76.1초 KR',craft:'내레이션과 장면별 이미지를 구성하고, 한국어·일본어 버전으로 음성과 자막을 편집했습니다.'},
+ sleeping1:{title:'잠자는 숲속의 공주 ①',views:'5.6만',duration:'102.1초 JP / 96.9초 KR',craft:'분량을 조정하며 대본 단축, 그림 재배치, 자막과 음량 보정을 반복했습니다.'},
+ sleeping2:{title:'잠자는 숲속의 공주 ②',views:'4.6만',duration:'104.7초 JP / 98.5초 KR',craft:'장면별 효과음을 추가하고, 언어별 음성 길이에 맞춰 울음·문·말발굽 소리의 위치를 조절했습니다.'},
+ peterpan:{title:'피터팬',views:'3.5만',duration:'95.1초 JP / 82.0초 KR',craft:'해설·피터·웬디의 목소리를 구분하고, 외침의 음량과 울림 및 장면 배열을 조정했습니다.'},
+ pinocchio:{title:'피노키오',views:'2.9만',duration:'98.7초 JP / 92.4초 KR',craft:'일본어 음성 끊김을 재녹음하고, 자막 시각과 장면별 음악·효과음의 무음 위치를 조정했습니다.'},
  redhood:{title:'빨간 망토',views:'1.4만',duration:'89.3초 JP / 79.4초 KR',craft:'배역별 음성, 문 두드림과 심장 소리, 결말부 정적을 구성하고 일본어 자막 시각을 보정했습니다.'},
  bluebeard:{title:'푸른 수염',views:'9,657',duration:'121.1초 JP / 102.8초 KR',craft:'한국어·일본어 배속과 음량을 조정하고, 일본어 자막의 쉼 전후 시점을 보정했습니다. 인물 표정과 얼굴색도 다시 다듬었습니다.'}
 };
