@@ -450,3 +450,11 @@
 /* Audience insight image inside the target panel. */
 .audience-proof{margin:20px 0 0}
 .audience-proof img{display:block;width:100%;background:#fff;border-radius:5px}
+
+/* Work pace cells under the process steps. */
+.work-pace{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:34px}
+.work-pace>div{padding:26px;border:1px solid #343740;border-radius:14px;background:#191b20}
+.work-pace span{display:block;font-size:18px;font-weight:700;color:#fff}
+.work-pace strong{display:block;font-size:clamp(30px,3.6vw,44px);font-weight:500;line-height:1.4;letter-spacing:-1px;color:#91beff;margin-top:6px}
+.work-pace p{font-size:14px;line-height:1.7;color:#c1c7d0;margin:4px 0 0}
+@media (max-width:760px){.work-pace{grid-template-columns:1fr;gap:12px}}
